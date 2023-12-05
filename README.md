@@ -2,7 +2,9 @@
 
 <h2>About Project</h2>
 <p> <a href="https://weary-ray-bandanna.cyclic.app/api/users> Live Link </a></p>
-<p>In this project I created a simple <strong>CRUD</strong> operation using TypeScript, Express, Mongo, Mongoose, and ZOD validation.</p>
+<p>In this project I created a simple <strong>CRUD</strong> operation using TypeScript, Express, Mongoose, and ZOD validation.</p>
+
+
 
 <h2>Project Features</h2>
 <ul>
@@ -13,6 +15,8 @@
   <li>User can find his/her total amount.</li>
   <li>User can Delete his/her account</li>
 </ul>
+
+
 
 <h2>API Endpoints</h2>
 <p> <strong>POST METHOD</strong>: "/api/users" to create a user.  </p>
