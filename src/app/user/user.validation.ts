@@ -29,6 +29,7 @@ const OrdersProperty = z.object({
   quantity: z.number().min(1, { message: 'Quantity must be at least 1' }),
 });
 
+
 export const OrderValidationSchema = z.array(OrdersProperty);
 
 export const UserValidationSchema = z.object({
