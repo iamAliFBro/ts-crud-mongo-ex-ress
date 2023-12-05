@@ -70,13 +70,14 @@ const getUserFromDBControler = async (req: Request, res: Response) => {
   }
 };
 
-// update user information
+
+
 const updateUserInfoControler = async (req: Request, res: Response) => {
   try {
     const { userId: id } = req.params;
     const { userData: updateUserdData } = req.body;
 
-    // validate data
+
     UserValidationSchema.parse(updateUserdData);
 
     const result = await userServices.updateUserInfo(id, updateUserdData);
