@@ -11,6 +11,7 @@ export interface TAddress {
   country: string;
 }
 
+
 export interface TOrders {
   productName: string;
   price: number;
@@ -18,6 +19,7 @@ export interface TOrders {
 }
 
 export interface TUser {
+  
   userId: number;
   username: string;
   password: string;
@@ -29,6 +31,7 @@ export interface TUser {
   address: TAddress;
   orders?: TOrders[];
 }
+
 
 export interface TUserModel extends Model<TUser> {
   isUserExists(id: string): Promise<TUser | null>;
