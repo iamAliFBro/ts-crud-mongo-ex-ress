@@ -18,9 +18,11 @@ const getUserFromDB = async (id: string) => {
   if (!(await UserModel.isUserExists(id))) {
     throw new Error('User not found');
   }
+  
   const result = await UserModel.findOne({ userId: id });
   return result;
 };
+
 
 const updateUserInfo = async (id: string, updatedData: TUser) => {
   if (!(await UserModel.isUserExists(id))) {
